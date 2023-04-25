@@ -35,6 +35,10 @@ public class Partita {
 		this.lab=lab;
 	}
 	
+	public void setGiocatore(Giocatore P1) {
+		this.P1=P1;
+	}
+	
 	/**
 	 * Restituisce vero se e solo se la partita e' stata vinta
 	 * @return vero se partita vinta
@@ -51,6 +55,11 @@ public class Partita {
 		return finita || vinta() || (this.P1.getCfu() == 0);
 	}
 
+	public boolean giocatoreIsVivo() {
+		// TODO Auto-generated method stub
+		return this.getGiocatore().isVivo();
+	}
+	
 	/**
 	 * Imposta la partita come finita
 	 *

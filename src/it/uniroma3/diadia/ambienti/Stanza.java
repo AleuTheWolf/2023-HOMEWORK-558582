@@ -57,6 +57,17 @@ public class Stanza {
     		}
     }
 
+    
+    public int getNumeroStanzeAdiacenti() {
+    	return this.numeroStanzeAdiacenti;
+    }
+    
+    public int getNumeroAttrezzi() {
+    	return this.numeroAttrezzi;
+    }
+    
+    
+ 
     /**
      * Restituisce la stanza adiacente nella direzione specificata
      * @param direzione
