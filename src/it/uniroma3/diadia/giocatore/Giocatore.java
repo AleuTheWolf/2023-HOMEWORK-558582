@@ -19,7 +19,16 @@ public class Giocatore {
 		return this.borsa;
 	}
 	
+	public void setBorsa(Borsa borsa) {
+		this.borsa=borsa;
+	}
+	
 	public void setCfu(int cfu) {
 		this.cfu=cfu;		
 	}	
+	
+	public boolean isVivo() {
+		return this.cfu > 0;
+	}
+	
 }
